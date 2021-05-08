@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\rafal\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\rafal\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Heavy Zombie Horror.851456321.00" t="ExcludeRecursive" />
+    <e p="C:\Users\rafal\Desktop\Heavy Zombie Horror" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Materials" t="Include">
+          <e p="BRICK &amp; STONES" t="Include">
+            <e p="readme.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Prefabs" t="Include">
+          <e p="CITY" t="Include">
+            <e p="NatureManufacture Assets - Trials Not Full Resolution" t="Include">
+              <e p="EasyRoads-HD_Add_ON" t="Include">
+                <e p="Shaders" t="Include">
+                  <e p="Decal_Metalic_Road_Shader Parallax ArrayTrial.shader" t="Include" />
+                  <e p="Decal_Metalic_Road_Shader Parallax Trial.shader" t="Include" />
+                  <e p="Standard_Metalic_Cross_Road_Shader Parallax ArrayTrial.shader" t="Include" />
+                  <e p="Standard_Metalic_Road_Shader Parallax ArrayTrial.shader" t="Include" />
+                </e>
+              </e>
+              <e p="Foliage Shaders" t="Include">
+                <e p="Cross_Model_Shader.shader" t="Include" />
+                <e p="NM_indirect.cginc" t="Include" />
+                <e p="NMWind.cginc" t="Include" />
+                <e p="NMWindNoShiver.cginc" t="Include" />
+                <e p="Tree_Bark_Metalic.shader" t="Include" />
+                <e p="Tree_Leaves_Specular.shader" t="Include" />
+              </e>
+              <e p="NatureManufacture Wind" t="Include">
+                <e p="NM_Wind.cs" t="Include" />
+              </e>
+              <e p="Park Photo Scanned Assets" t="Include">
+                <e p="Shaders" t="Include">
+                  <e p="Standard_Metalic_UV_Free_Walls_and_Floors.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Windridge City Assets" t="Include">
+              <e p="CTS Trial" t="Include">
+                <e p="Shaders" t="Include">
+                  <e p="CTS Terrain Shader Advanced LOD Trial.shader" t="Include" />
+                  <e p="CTS Terrain Shader Advanced Trial.shader" t="Include" />
+                </e>
+              </e>
+              <e p="READ ME - About project and assets.txt" t="Include" />
+              <e p="Third-Party Notices.txt" t="Include" />
+              <e p="UnityCompanionLicense_ForAssetComnponentsStatedInThird-PartyNotices.txt" t="Include" />
+            </e>
+          </e>
+          <e p="CRATES" t="Include">
+            <e p="info.txt" t="Include" />
+          </e>
+          <e p="SKYBOX" t="Include">
+            <e p="Skybox Cubemap Extended" t="Include">
+              <e p="Core" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="Boxophobic.SkyboxCubemapExtended.Editor.asmdef" t="Include" />
+                  <e p="SkyboxExtendedHub.cs" t="Include" />
+                  <e p="SkyboxExtendedShaderGUI.cs" t="Include" />
+                  <e p="SkyboxExtendedWindows.cs" t="Include" />
+                </e>
+                <e p="Shaders" t="Include">
+                  <e p="Skybox Cubemap Extended.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Utils" t="Include">
+              <e p="Editor" t="Include">
+                <e p="Boxophobic.Utils.Editor.asmdef" t="Include" />
+                <e p="Constants" t="Include">
+                  <e p="Constants.cs" t="Include" />
+                </e>
+                <e p="SettingsUtils" t="Include">
+                  <e p="LoadSettingsData.cs" t="Include" />
+                  <e p="SaveSettingsData.cs" t="Include" />
+                </e>
+                <e p="StyledGUI" t="Include">
+                  <e p="DrawInspectorBanner.cs" t="Include" />
+                  <e p="DrawInspectorCategory.cs" t="Include" />
+                  <e p="DrawWindowBanner.cs" t="Include" />
+                  <e p="DrawWindowCategory.cs" t="Include" />
+                </e>
+                <e p="StyledInspector" t="Include">
+                  <e p="StyledBannerDrawer.cs" t="Include" />
+                  <e p="StyledButtonDrawer.cs" t="Include" />
+                  <e p="StyledCategoryDrawer.cs" t="Include" />
+                  <e p="StyledIndentDrawer.cs" t="Include" />
+                  <e p="StyledInteractiveDrawer.cs" t="Include" />
+                  <e p="StyledMessageDrawer.cs" t="Include" />
+                  <e p="StyledPopupArrayDrawer.cs" t="Include" />
+                  <e p="StyledPopupLayersDrawer.cs" t="Include" />
+                  <e p="StyledRangeOptionsDrawer.cs" t="Include" />
+                  <e p="StyledSpaceDrawer.cs" t="Include" />
+                  <e p="StyledTextDrawer.cs" t="Include" />
+                  <e p="StyledTexturePreviewDrawer.cs" t="Include" />
+                </e>
+                <e p="StyledMaterial" t="Include">
+                  <e p="StyledBannerDrawer.cs" t="Include" />
+                  <e p="StyledButtonDrawer.cs" t="Include" />
+                  <e p="StyledCategoryDrawer.cs" t="Include" />
+                  <e p="StyledDiffusionMaterialDrawer.cs" t="Include" />
+                  <e p="StyledIndentDrawer.cs" t="Include" />
+                  <e p="StyledInteractiveDrawer.cs" t="Include" />
+                  <e p="StyledMessageDrawer.cs" t="Include" />
+                  <e p="StyledOptionsSliderDrawer.cs" t="Include" />
+                  <e p="StyledRemapSliderDrawer.cs" t="Include" />
+                  <e p="StyledSpaceDrawer.cs" t="Include" />
+                  <e p="StyledTextDrawer.cs" t="Include" />
+                  <e p="StyledTextureDrawer.cs" t="Include" />
+                  <e p="StyledToggleDrawer.cs" t="Include" />
+                </e>
+                <e p="StyledMono" t="Include">
+                  <e p="StyledMonoBehaviourEditor.cs" t="Include" />
+                  <e p="StyledScriptableObjectEditor.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="Boxophobic.Utils.Scripts.asmdef" t="Include" />
+                <e p="SettingsUtils" t="Include">
+                  <e p="SettingsData.cs" t="Include" />
+                </e>
+                <e p="StyledInspector" t="Include">
+                  <e p="StyledBanner.cs" t="Include" />
+                  <e p="StyledButton.cs" t="Include" />
+                  <e p="StyledCategory.cs" t="Include" />
+                  <e p="StyledIndent.cs" t="Include" />
+                  <e p="StyledInteractive.cs" t="Include" />
+                  <e p="StyledMessage.cs" t="Include" />
+                  <e p="StyledPopupArray.cs" t="Include" />
+                  <e p="StyledPopupLayers.cs" t="Include" />
+                  <e p="StyledRangeOptions.cs" t="Include" />
+                  <e p="StyledSpace.cs" t="Include" />
+                  <e p="StyledText.cs" t="Include" />
+                  <e p="StyledTexturePreview.cs" t="Include" />
+                </e>
+                <e p="StyledMono" t="Include">
+                  <e p="StyledMonoBehaviour.cs" t="Include" />
+                  <e p="StyledScriptableObject.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="CameraController.cs" t="Include" />
+          <e p="CollectStar.cs" t="Include" />
+          <e p="HealthBar.cs" t="Include" />
+          <e p="HealthPotion.cs" t="Include" />
+          <e p="MonkeyController.cs" t="Include" />
+          <e p="ScoringSystem.cs" t="Include" />
+          <e p="ZombieController.cs" t="Include" />
+        </e>
+        <e p="Supercyan Character Pack Zombie Sample" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="ZombieCameraLogic.cs" t="Include" />
+            <e p="ZombieCharacterControl.cs" t="Include" />
+            <e p="ZombieFree.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="Legacy" t="Include">
+              <e p="CelShader.shader" t="Include" />
+            </e>
+            <e p="SupercyanShader.shader" t="Include" />
+            <e p="SupercyanShaderLighting.cginc" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Boxophobic.SkyboxCubemapExtended.Editor.csproj" t="IncludeRecursive" />
+      <e p="Boxophobic.Utils.Editor.csproj" t="IncludeRecursive" />
+      <e p="Boxophobic.Utils.Scripts.csproj" t="IncludeRecursive" />
+      <e p="Heavy Zombie Horror.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
