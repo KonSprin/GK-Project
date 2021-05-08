@@ -31,6 +31,11 @@ public class MonkeyController : MonoBehaviour
 
     private CharacterController controller;
 
+    private bool walkingKeys = false;
+    private bool speedKey = false;
+    private bool jumpKey = false;
+
+
     private void Start()
     {
         controller = GetComponent <CharacterController>();
@@ -44,6 +49,27 @@ public class MonkeyController : MonoBehaviour
         Move();
     }
 
+    private void FixedUpdate()
+    {
+        if (walkingKeys)
+        {
+            Walk();
+            walkingKeys = false;
+        }
+
+        if (speedKey)
+        {
+            Run();
+            speedKey = false;
+        }
+
+        if (jumpKey)
+        {
+            Jump();
+            jumpKey = false;
+        }
+    }
+
     private void Move()
     {
         isGrounded = Physics.CheckSphere(transform.position, groundCheckDistance, groundMask);
@@ -55,11 +81,13 @@ public class MonkeyController : MonoBehaviour
 
         if (moveDirection != Vector3.zero && !Input.GetKey(KeyCode.LeftShift))
         {
-            Walk();
+            walkingKeys = true;
+            //Walk();
         }
         else if (moveDirection != Vector3.zero && Input.GetKey(KeyCode.LeftShift))
         {
-            Run();
+            speedKey = true;
+            //Run();
         }
         else if (moveDirection == Vector3.zero)
         {
@@ -74,7 +102,8 @@ public class MonkeyController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && jumpLimit > 0)
         {
-            Jump();
+            jumpKey = true;
+            //Jump();
             jumpLimit--;
         }
 
