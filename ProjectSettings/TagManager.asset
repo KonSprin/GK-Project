@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MonkeyHit
   - Enemy
+  - deathbox
   layers:
   - Default
   - TransparentFX

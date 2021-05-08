@@ -126,6 +126,13 @@ public class MonkeyController : MonoBehaviour
             //StartCoroutine(Wait(2f));
             //hasCollide = false;
         }
+        
+        if(other.gameObject.tag == "deathbox")
+        {
+            currentHealth=0;
+            healthBar.SetHealth(currentHealth);
+        }
+
 
         if(punchLimit == 0)
         {
