@@ -56,7 +56,7 @@ public class MonkeyController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (walkingKeys)
+        /*if (walkingKeys)
         {
             Walk();
             walkingKeys = false;
@@ -72,7 +72,8 @@ public class MonkeyController : MonoBehaviour
         {
             Jump();
             jumpKey = false;
-        }
+        }*/
+
 
         if (currentHealth <= 0)
         {
@@ -91,13 +92,13 @@ public class MonkeyController : MonoBehaviour
 
         if (moveDirection != Vector3.zero && !Input.GetKey(KeyCode.LeftShift))
         {
-            walkingKeys = true;
-            //Walk();
+            //walkingKeys = true;
+            Walk();
         }
         else if (moveDirection != Vector3.zero && Input.GetKey(KeyCode.LeftShift))
         {
-            speedKey = true;
-            //Run();
+            //speedKey = true;
+            Run();
         }
         else if (moveDirection == Vector3.zero)
         {
@@ -112,9 +113,10 @@ public class MonkeyController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && jumpLimit > 0)
         {
-            jumpKey = true;
-            //Jump();
+            //jumpKey = true;
+            Jump();
             jumpLimit--;
+            //jumpKey = false;
         }
 
         if (Input.GetMouseButtonDown(0))
