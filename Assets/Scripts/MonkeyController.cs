@@ -29,6 +29,9 @@ public class MonkeyController : MonoBehaviour
     public int maxHeath = 10;
     public static int currentHealth;
 
+    public static Vector3 respawnPoint;
+    private GameObject gameObject;
+
     private CharacterController controller;
 
     private bool walkingKeys = false;
@@ -38,10 +41,12 @@ public class MonkeyController : MonoBehaviour
 
     private void Start()
     {
-        controller = GetComponent <CharacterController>();
+        controller = GetComponent<CharacterController>();
         currentHealth = maxHeath;
         healthBar.SetMaxHealth(maxHeath);
         monkey.enabled = false;
+        gameObject = GameObject.FindGameObjectWithTag("Player");
+        respawnPoint = gameObject.transform.position;
     }
 
     private void Update()
@@ -51,7 +56,7 @@ public class MonkeyController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (walkingKeys)
+        /*if (walkingKeys)
         {
             Walk();
             walkingKeys = false;
@@ -67,6 +72,12 @@ public class MonkeyController : MonoBehaviour
         {
             Jump();
             jumpKey = false;
+        }*/
+
+
+        if (currentHealth <= 0)
+        {
+            Die();
         }
     }
 
@@ -81,13 +92,13 @@ public class MonkeyController : MonoBehaviour
 
         if (moveDirection != Vector3.zero && !Input.GetKey(KeyCode.LeftShift))
         {
-            walkingKeys = true;
-            //Walk();
+            //walkingKeys = true;
+            Walk();
         }
         else if (moveDirection != Vector3.zero && Input.GetKey(KeyCode.LeftShift))
         {
-            speedKey = true;
-            //Run();
+            //speedKey = true;
+            Run();
         }
         else if (moveDirection == Vector3.zero)
         {
@@ -102,9 +113,10 @@ public class MonkeyController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && jumpLimit > 0)
         {
-            jumpKey = true;
-            //Jump();
+            //jumpKey = true;
+            Jump();
             jumpLimit--;
+            //jumpKey = false;
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -140,12 +152,12 @@ public class MonkeyController : MonoBehaviour
 
     private void Jump()
     {
-        velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);   
+        velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Enemy" && !hasCollide)
+        if (other.gameObject.tag == "Enemy" && !hasCollide)
         {
             hasCollide = true;
             currentHealth -= 1;
@@ -155,16 +167,14 @@ public class MonkeyController : MonoBehaviour
             //StartCoroutine(Wait(2f));
             //hasCollide = false;
         }
-
-        if(punchLimit == 0)
-        {
-            Die();
-        }
     }
 
     private void Die()
     {
-
+        print(respawnPoint);
+        gameObject.transform.position = respawnPoint;
+        currentHealth = maxHeath;
+        healthBar.SetHealth(currentHealth);
     }
 
     private void Collided()
