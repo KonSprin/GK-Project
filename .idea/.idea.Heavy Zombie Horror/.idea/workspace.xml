@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Heavy Zombie Horror/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Heavy Zombie Horror/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Heavy Zombie Horror/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Heavy Zombie Horror/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/navys.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/navys.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonkeyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonkeyController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +14,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonkeyController.cs" />
+    </changedPaths>
   </component>
   <component name="ProjectId" id="1rLrvPZpZfqnjIo6MTtwKA0CLZ5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -56,6 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1618766447938</updated>
       <workItem from="1620475725833" duration="1161000" />
+      <workItem from="1620766678921" duration="3728000" />
     </task>
     <servers />
   </component>
@@ -64,6 +71,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

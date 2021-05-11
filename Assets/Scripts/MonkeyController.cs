@@ -28,7 +28,7 @@ public class MonkeyController : MonoBehaviour
     public HealthBar healthBar;
     public int maxHeath = 10;
     public static int currentHealth;
-
+    public GameObject finishText;
     public static Vector3 respawnPoint;
     private GameObject gameObject;
 
@@ -52,10 +52,13 @@ public class MonkeyController : MonoBehaviour
     private void Update()
     {
         Move();
+        
+        
     }
 
     private void FixedUpdate()
     {
+        isGrounded = Physics.CheckSphere(transform.position, groundCheckDistance, groundMask);
         /*if (walkingKeys)
         {
             Walk();
@@ -83,7 +86,7 @@ public class MonkeyController : MonoBehaviour
 
     private void Move()
     {
-        isGrounded = Physics.CheckSphere(transform.position, groundCheckDistance, groundMask);
+        
 
         float moveZ = Input.GetAxis("Vertical");
         float moveX = Input.GetAxis("Horizontal");
@@ -108,7 +111,7 @@ public class MonkeyController : MonoBehaviour
 
         if (isGrounded)
         {
-            jumpLimit = 2;
+            jumpLimit = 1;
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && jumpLimit > 0)
@@ -167,6 +170,11 @@ public class MonkeyController : MonoBehaviour
             //StartCoroutine(Wait(2f));
             //hasCollide = false;
         }
+        if (other.gameObject.tag == "GameOver" && !hasCollide)
+        {
+            finishText.GetComponent<Text>().text = "YOU WIN ! ! !";
+            Application.Quit();
+        }
     }
 
     private void Die()
@@ -194,6 +202,7 @@ public class MonkeyController : MonoBehaviour
         // Attack animation
         isColliding = true;
         monkey.enabled = true; // hand object
+        print("ASDSADSADSADSADSADSAD ATAKUJE");
     }
 
     public void DeactivateEnemy()
