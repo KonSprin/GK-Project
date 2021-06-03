@@ -16,7 +16,10 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-        Rotate();    
+        if(MonkeyController.currentHealth > 0)
+        {
+            Rotate();
+        } 
     }
 
     private void Rotate()

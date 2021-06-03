@@ -2,10 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fa57af9-d00c-40e4-8420-005597501050" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Heavy Zombie Horror/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Heavy Zombie Horror/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Heavy Zombie Horror/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Heavy Zombie Horror/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Heavy Zombie Horror/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Heavy Zombie Horror/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RPG Pack.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RPG Pack.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scanta.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scanta.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scanta/Dancing Monkey/AnimatorController/Walking.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scanta/Dancing Monkey/AnimatorController/Walking.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scanta/Dancing Monkey/Models/Attack.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scanta/Dancing Monkey/Models/Attack.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scanta/Dancing Monkey/Models/Death.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scanta/Dancing Monkey/Models/Death.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scanta/Dancing Monkey/Models/Jump.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scanta/Dancing Monkey/Models/Jump.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scanta/Dancing Monkey/Models/Running.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scanta/Dancing Monkey/Models/Running.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scanta/Dancing Monkey/Models/Taunt.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scanta/Dancing Monkey/Models/Taunt.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scanta/Dancing Monkey/Models/Walking.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scanta/Dancing Monkey/Models/Walking.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/navys.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/navys.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/navys/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/navys/NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CollectStar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CollectStar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CollectStar.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CollectStar.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthPotion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthPotion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthPotion.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthPotion.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonkeyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonkeyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonkeyController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonkeyController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RespawnController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RespawnController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RespawnController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RespawnController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScoringSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScoringSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScoringSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScoringSystem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ZombieController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ZombieController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ZombieController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ZombieController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Supercyan Character Pack Zombie Sample.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Supercyan Character Pack Zombie Sample.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Supercyan Character Pack Zombie Sample/AnimatorControllers/FreeZombieController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Supercyan Character Pack Zombie Sample/AnimatorControllers/FreeZombieController.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +100,7 @@
       <updated>1618766447938</updated>
       <workItem from="1620475725833" duration="1161000" />
       <workItem from="1620766678921" duration="3728000" />
+      <workItem from="1622755360447" duration="3720000" />
     </task>
     <servers />
   </component>
@@ -81,6 +119,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

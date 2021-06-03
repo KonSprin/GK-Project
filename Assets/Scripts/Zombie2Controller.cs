@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class ZombieController : MonoBehaviour
+public class Zombie2Controller : MonoBehaviour
 {
     NavMeshAgent nm;
     public Transform target;
@@ -13,7 +13,8 @@ public class ZombieController : MonoBehaviour
     [SerializeField] private enum AIState { idle, chasing }
     [SerializeField] private AIState aiState = AIState.idle;
     [SerializeField] private float distanceTreshold = 15f;
-    [SerializeField] private CapsuleCollider enemy;
+    [SerializeField] private CapsuleCollider enemyLeftHand;
+    [SerializeField] private CapsuleCollider enemyRightHand;
     [SerializeField] private bool isColliding = false;
     [SerializeField] private float hitTime = 3f;
     [SerializeField] private float currTime = 0f;
@@ -25,7 +26,7 @@ public class ZombieController : MonoBehaviour
 
     void Start()
     {
-        nm = GetComponent<NavMeshAgent>();
+        nm = GetComponent<UnityEngine.AI.NavMeshAgent>();
         animator = GetComponent<Animator>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
         StartCoroutine(Think());
@@ -45,7 +46,6 @@ public class ZombieController : MonoBehaviour
             Invoke("ResetPosition", 5);
         }
     }
-
     IEnumerator Think()
     {
         while (true)
@@ -53,7 +53,7 @@ public class ZombieController : MonoBehaviour
             switch (aiState)
             {
                 case AIState.idle:
-                    animator.SetFloat("MoveSpeed", 0, 0.1f, Time.deltaTime);
+                    animator.SetFloat("Speed", 0, 0.1f, Time.deltaTime);
                     float dist = Vector3.Distance(target.position, transform.position);
                     if (dist < distanceTreshold)
                     {
@@ -66,7 +66,7 @@ public class ZombieController : MonoBehaviour
                     break;
 
                 case AIState.chasing:
-                    animator.SetFloat("MoveSpeed", 1, 0.1f, Time.deltaTime);
+                    animator.SetFloat("Speed", 1, 0.1f, Time.deltaTime);
                     dist = Vector3.Distance(target.position, transform.position);
                     if (dist > distanceTreshold)
                     {
@@ -90,7 +90,7 @@ public class ZombieController : MonoBehaviour
     {
         if (other.gameObject.tag == "MonkeyHit" && !hasCollide)
         {
-            animator.SetTrigger("Hit");
+            //animator.SetTrigger("Attack");
             hasCollide = true;
             punchLimit--;
             hasCollide = false;
@@ -104,10 +104,9 @@ public class ZombieController : MonoBehaviour
 
     private void Die()
     {
-        animator.SetTrigger("Dead");
-        //Destroy(nm);
-        nm.enabled = false;
-        enemy.enabled = false;
+        animator.SetTrigger("Die");
+        enemyRightHand.enabled = false;
+        enemyLeftHand.enabled = false;
         cc.enabled = true;
         //Destroy(gameObject);
         DeactivateEnemy();
@@ -141,24 +140,24 @@ public class ZombieController : MonoBehaviour
 
     public void ActivateEnemy()
     {
-        enemy.enabled = true;
+        enemyRightHand.enabled = true;
+        enemyLeftHand.enabled = true;
         currTime = 0f;
     }
 
     public void DeactivateEnemy()
     {
-        enemy.enabled = false;
+        enemyRightHand.enabled = false;
+        enemyLeftHand.enabled = false;
     }
 
     public void ResetPosition()
     {
-
-        nm.enabled = true;
-        cc.enabled = false;
-        punchLimit = 3;
         animator.SetTrigger("Resurrect");
         aiState = AIState.idle;
         gameObject.transform.position = respawnPoint;
-
+        nm.enabled = true;
+        cc.enabled = false;
+        punchLimit = 3;
     }
 }

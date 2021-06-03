@@ -16,6 +16,7 @@ public class MonkeyController : MonoBehaviour
     [SerializeField] private float groundCheckDistance;
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private float gravity;
+    public Transform cam;
 
     [SerializeField] private float jumpHeight;
     [SerializeField] private int jumpLimit;
@@ -31,28 +32,35 @@ public class MonkeyController : MonoBehaviour
     public GameObject finishText;
     public static Vector3 respawnPoint;
     private GameObject gameObject;
+    public float turnSmoothTime = 0.1f;
+    float turnSmoothVelocity;
 
     private CharacterController controller;
+    private Animator animator;
 
     private bool walkingKeys = false;
     private bool speedKey = false;
     private bool jumpKey = false;
-
+    public static bool alive = true;
+    private bool hasDied = false;
+    private GameObject death;
 
     private void Start()
     {
         controller = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
         currentHealth = maxHeath;
         healthBar.SetMaxHealth(maxHeath);
         monkey.enabled = false;
         gameObject = GameObject.FindGameObjectWithTag("Player");
+        death = GameObject.FindGameObjectWithTag("Death");
+        death.SetActive(false);
         respawnPoint = gameObject.transform.position;
     }
 
     private void Update()
     {
-        Move();
-        
+        Move();  
         
     }
 
@@ -76,29 +84,31 @@ public class MonkeyController : MonoBehaviour
             Jump();
             jumpKey = false;
         }*/
-
-
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && !hasDied)
         {
+            alive = false;
+            hasDied = true;
             Die();
         }
+
+        
     }
 
     private void Move()
     {
-        
 
+       
         float moveZ = Input.GetAxis("Vertical");
         float moveX = Input.GetAxis("Horizontal");
-        moveDirection = new Vector3(moveX, 0, moveZ);
-        moveDirection = transform.TransformDirection(moveDirection);
+        moveDirection = new Vector3(moveX, 0, moveZ).normalized;
+        //moveDirection = transform.TransformDirection(moveDirection);
 
-        if (moveDirection != Vector3.zero && !Input.GetKey(KeyCode.LeftShift))
+        if (moveDirection != Vector3.zero && !Input.GetKey(KeyCode.LeftShift) && alive)
         {
             //walkingKeys = true;
             Walk();
         }
-        else if (moveDirection != Vector3.zero && Input.GetKey(KeyCode.LeftShift))
+        else if (moveDirection != Vector3.zero && Input.GetKey(KeyCode.LeftShift) && alive)
         {
             //speedKey = true;
             Run();
@@ -107,14 +117,14 @@ public class MonkeyController : MonoBehaviour
         {
             Idle();
         }
-        moveDirection *= moveSpeed;
+        //moveDirection *= moveSpeed;
 
         if (isGrounded)
         {
             jumpLimit = 1;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && jumpLimit > 0)
+        if (Input.GetKeyDown(KeyCode.Space) && jumpLimit > 0 && alive)
         {
             //jumpKey = true;
             Jump();
@@ -122,39 +132,59 @@ public class MonkeyController : MonoBehaviour
             //jumpKey = false;
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && alive)
         {
-            ActivateEnemy();
+           ActivateEnemy();
         }
 
         if (Input.GetMouseButtonUp(0))
         {
             DeactivateEnemy();
         }
+       
+        if (!alive)
+        {
+            moveSpeed = 0;
+        }
 
-        controller.Move(moveDirection * Time.deltaTime);
+        if(moveDirection.magnitude >= 0.1f)
+        {
+            float targetAngle = cam.eulerAngles.y;
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
+
+            Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * moveDirection;
+            // moveDir *= moveSpeed;
+            controller.Move(moveDir.normalized * moveSpeed * Time.deltaTime);
+        }
 
         velocity.y += gravity + Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+
+
     }
 
     private void Idle()
     {
-
+        animator.SetFloat("Speed", 0, 0.1f, Time.deltaTime);
     }
 
     private void Walk()
     {
         moveSpeed = walkSpeed;
+        animator.SetFloat("Speed", 0.5f, 0.1f, Time.deltaTime);
     }
 
     private void Run()
     {
         moveSpeed = runSpeed;
+        animator.SetFloat("Speed", 1.0f, 0.1f, Time.deltaTime);
     }
 
     private void Jump()
     {
+        animator.SetTrigger("Jump");
         velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
     }
 
@@ -164,6 +194,23 @@ public class MonkeyController : MonoBehaviour
         {
             hasCollide = true;
             currentHealth -= 1;
+            if(currentHealth > 0) {
+                animator.SetTrigger("Hit");
+            }
+            healthBar.SetHealth(currentHealth);
+
+            Invoke("Collided", 2);
+            //StartCoroutine(Wait(2f));
+            //hasCollide = false;
+        }
+        if (other.gameObject.tag == "Enemy2" && !hasCollide)
+        {
+            hasCollide = true;
+            currentHealth -= 2;
+            if (currentHealth > 0)
+            {
+                animator.SetTrigger("Hit");
+            }
             healthBar.SetHealth(currentHealth);
 
             Invoke("Collided", 2);
@@ -179,31 +226,45 @@ public class MonkeyController : MonoBehaviour
 
     private void Die()
     {
+        
         print(respawnPoint);
+        animator.SetTrigger("Die");
+        print("I DIED");
+        //Invoke("Respawn", 5);
+        Respawn();
+    }
+
+    private void Respawn()
+    {
+        death.SetActive(true);
+        
+        animator.SetTrigger("Respawn");
+        print("IM ALIVE");
         gameObject.transform.position = respawnPoint;
         currentHealth = maxHeath;
         healthBar.SetHealth(currentHealth);
+        alive = true;
+        hasDied = false;
+        //Invoke("Clear", 3); 
+        Clear();
     }
 
+    private void Clear()
+    {
+        death.SetActive(false);
+    }
     private void Collided()
     {
         hasCollide = false;
     }
 
-    private void Attack()
-    {
-        //isColliding = true;
-        ActivateEnemy();
-        DeactivateEnemy();
-    }
-
     public void ActivateEnemy()
     {
-        // Attack animation
+        animator.SetTrigger("Attack");
         isColliding = true;
         monkey.enabled = true; // hand object
-        print("ASDSADSADSADSADSADSAD ATAKUJE");
-    }
+
+           }
 
     public void DeactivateEnemy()
     {

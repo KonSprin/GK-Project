@@ -1,0 +1,153 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Monkey Attack Mask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: monkey:default1
+    m_Weight: 0
+  - m_Path: monkey:group1
+    m_Weight: 0
+  - m_Path: monkey:Group3
+    m_Weight: 0
+  - m_Path: monkey:Group7
+    m_Weight: 0
+  - m_Path: monkey:Hips
+    m_Weight: 0
+  - m_Path: monkey:Hips/monkey:LeftUpLeg
+    m_Weight: 0
+  - m_Path: monkey:Hips/monkey:LeftUpLeg/monkey:LeftLeg
+    m_Weight: 0
+  - m_Path: monkey:Hips/monkey:LeftUpLeg/monkey:LeftLeg/monkey:LeftFoot
+    m_Weight: 0
+  - m_Path: monkey:Hips/monkey:LeftUpLeg/monkey:LeftLeg/monkey:LeftFoot/monkey:LeftToeBase
+    m_Weight: 0
+  - m_Path: monkey:Hips/monkey:LeftUpLeg/monkey:LeftLeg/monkey:LeftFoot/monkey:LeftToeBase/monkey:LeftToe_End
+    m_Weight: 0
+  - m_Path: monkey:Hips/monkey:RightUpLeg
+    m_Weight: 0
+  - m_Path: monkey:Hips/monkey:RightUpLeg/monkey:RightLeg
+    m_Weight: 0
+  - m_Path: monkey:Hips/monkey:RightUpLeg/monkey:RightLeg/monkey:RightFoot
+    m_Weight: 0
+  - m_Path: monkey:Hips/monkey:RightUpLeg/monkey:RightLeg/monkey:RightFoot/monkey:RightToeBase
+    m_Weight: 0
+  - m_Path: monkey:Hips/monkey:RightUpLeg/monkey:RightLeg/monkey:RightFoot/monkey:RightToeBase/monkey:RightToe_End
+    m_Weight: 0
+  - m_Path: monkey:Hips/monkey:Spine
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand/monkey:LeftHandIndex1
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand/monkey:LeftHandIndex1/monkey:LeftHandIndex2
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand/monkey:LeftHandIndex1/monkey:LeftHandIndex2/monkey:LeftHandIndex3
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand/monkey:LeftHandIndex1/monkey:LeftHandIndex2/monkey:LeftHandIndex3/monkey:LeftHandIndex4
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand/monkey:LeftHandMiddle1
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand/monkey:LeftHandMiddle1/monkey:LeftHandMiddle2
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand/monkey:LeftHandMiddle1/monkey:LeftHandMiddle2/monkey:LeftHandMiddle3
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand/monkey:LeftHandMiddle1/monkey:LeftHandMiddle2/monkey:LeftHandMiddle3/monkey:LeftHandMiddle4
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand/monkey:LeftHandPinky1
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand/monkey:LeftHandPinky1/monkey:LeftHandPinky2
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand/monkey:LeftHandPinky1/monkey:LeftHandPinky2/monkey:LeftHandPinky3
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand/monkey:LeftHandPinky1/monkey:LeftHandPinky2/monkey:LeftHandPinky3/monkey:LeftHandPinky4
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand/monkey:LeftHandRing1
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand/monkey:LeftHandRing1/monkey:LeftHandRing2
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand/monkey:LeftHandRing1/monkey:LeftHandRing2/monkey:LeftHandRing3
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand/monkey:LeftHandRing1/monkey:LeftHandRing2/monkey:LeftHandRing3/monkey:LeftHandRing4
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand/monkey:LeftHandThumb1
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand/monkey:LeftHandThumb1/monkey:LeftHandThumb2
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand/monkey:LeftHandThumb1/monkey:LeftHandThumb2/monkey:LeftHandThumb3
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:LeftShoulder/monkey:LeftArm/monkey:LeftForeArm/monkey:LeftHand/monkey:LeftHandThumb1/monkey:LeftHandThumb2/monkey:LeftHandThumb3/monkey:LeftHandThumb4
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:Neck
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:Neck/monkey:Head
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:Neck/monkey:Head/monkey:HeadTop_End
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand/monkey:RightHandIndex1
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand/monkey:RightHandIndex1/monkey:RightHandIndex2
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand/monkey:RightHandIndex1/monkey:RightHandIndex2/monkey:RightHandIndex3
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand/monkey:RightHandIndex1/monkey:RightHandIndex2/monkey:RightHandIndex3/monkey:RightHandIndex4
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand/monkey:RightHandMiddle1
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand/monkey:RightHandMiddle1/monkey:RightHandMiddle2
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand/monkey:RightHandMiddle1/monkey:RightHandMiddle2/monkey:RightHandMiddle3
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand/monkey:RightHandMiddle1/monkey:RightHandMiddle2/monkey:RightHandMiddle3/monkey:RightHandMiddle4
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand/monkey:RightHandPinky1
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand/monkey:RightHandPinky1/monkey:RightHandPinky2
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand/monkey:RightHandPinky1/monkey:RightHandPinky2/monkey:RightHandPinky3
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand/monkey:RightHandPinky1/monkey:RightHandPinky2/monkey:RightHandPinky3/monkey:RightHandPinky4
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand/monkey:RightHandRing1
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand/monkey:RightHandRing1/monkey:RightHandRing2
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand/monkey:RightHandRing1/monkey:RightHandRing2/monkey:RightHandRing3
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand/monkey:RightHandRing1/monkey:RightHandRing2/monkey:RightHandRing3/monkey:RightHandRing4
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand/monkey:RightHandThumb1
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand/monkey:RightHandThumb1/monkey:RightHandThumb2
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand/monkey:RightHandThumb1/monkey:RightHandThumb2/monkey:RightHandThumb3
+    m_Weight: 1
+  - m_Path: monkey:Hips/monkey:Spine/monkey:Spine1/monkey:Spine2/monkey:RightShoulder/monkey:RightArm/monkey:RightForeArm/monkey:RightHand/monkey:RightHandThumb1/monkey:RightHandThumb2/monkey:RightHandThumb3/monkey:RightHandThumb4
+    m_Weight: 1
+  - m_Path: monkey:skinCluster2Set
+    m_Weight: 0

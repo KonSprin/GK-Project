@@ -153,6 +153,7 @@
           <e p="MonkeyController.cs" t="Include" />
           <e p="RespawnController.cs" t="Include" />
           <e p="ScoringSystem.cs" t="Include" />
+          <e p="Zombie2Controller.cs" t="Include" />
           <e p="ZombieController.cs" t="Include" />
         </e>
         <e p="Supercyan Character Pack Zombie Sample" t="Include">
